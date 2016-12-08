@@ -1,4 +1,4 @@
-# iso6983 README
+# vscode-grbl README
 
 This extension for syntax highlighting Grbl G-code that conforms to Grbl 0.9g, a subset of iso6983.
 
@@ -20,38 +20,13 @@ This is a syntax highlighter, not anything really cool.
 
 ## Known Issues
 
-Needs to focus on Grbl/GhostGunner supported G codes, currently allows code out of range (ex. G9001 is valid)
+Needs to focus on Grbl/GhostGunner supported G codes
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+TODO
 
-### 1.0.0
+### 0.0.1
 
-Initial release of ...
+Initial release of vscode-grbl
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-# vscode-grbl

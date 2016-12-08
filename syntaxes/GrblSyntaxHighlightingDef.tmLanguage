@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>nc</string>
+		<string>ngc</string>
+		<string>prg</string>
+		<string>mpf</string>
+		<string>gcode</string>
+	</array>
+	<key>name</key>
+	<string>Grbl</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>invalid g commands</string>
+			<key>match</key>
+			<string>G[0-9][0-9][0-9]+</string>
+			<key>name</key>
+			<string>invalid.deprecated</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>invalid g command G52</string>
+			<key>match</key>
+			<string>G52</string>
+			<key>name</key>
+			<string>invalid.deprecated</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Set WCS</string>
+			<key>match</key>
+			<string>G10 L20 P[1-4]</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>g commands</string>
+			<key>match</key>
+			<string>G[0-9][0-9]?\.?[0-3]?</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>m commands</string>
+			<key>match</key>
+			<string>M\d+</string>
+			<key>name</key>
+			<string>support.constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>comments</string>
+			<key>match</key>
+			<string>\(.*\)</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>variables</string>
+			<key>match</key>
+			<string>(#\d+)</string>
+			<key>name</key>
+			<string>variable.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>z-position</string>
+			<key>match</key>
+			<string>(Z-?\d+[\.]*\d*)</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>positions</string>
+			<key>match</key>
+			<string>([XY]-?\d+\.*\d*)</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>arc positions</string>
+			<key>match</key>
+			<string>([IJK]-?\d+\.*\d*)</string>
+			<key>name</key>
+			<string>constant.other.color</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>feeds &amp; speeds</string>
+			<key>match</key>
+			<string>(?&lt;= )[FS]([\d\.-])+</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>O &amp; N numberes</string>
+			<key>match</key>
+			<string>([ON]([\d\.-])+)</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>brackets</string>
+			<key>match</key>
+			<string>(\[|\])</string>
+			<key>name</key>
+			<string>string.interpolated</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.grbl</string>
+	<key>uuid</key>
+	<string>7287ac7d-bcc9-11e6-855b-f45c89998e31</string>
+</dict>
+</plist>

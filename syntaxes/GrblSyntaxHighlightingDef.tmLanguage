@@ -40,17 +40,105 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>g commands</string>
+			<string>G1 - G4 commands</string>
 			<key>match</key>
-			<string>G[0-9][0-9]?\.?[0-3]?</string>
+			<string>(G[0-4][ ])</string>
 			<key>name</key>
 			<string>string</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>m commands</string>
+			<string>G17 - G19 commands</string>
 			<key>match</key>
-			<string>M\d+</string>
+			<string>(G1[7-9])</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G20 - G21 commands</string>
+			<key>match</key>
+			<string>(G2[01])</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G28 commands</string>
+			<key>match</key>
+			<string>(G28\.?1? )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G30 commands</string>
+			<key>match</key>
+			<string>(G30(\.1)? )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G38 commands</string>
+			<key>match</key>
+			<string>(G38(\.2)? )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G53 - G59 commands</string>
+			<key>match</key>
+			<string>(G5[3-9] )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G90 - G91 commands</string>
+			<key>match</key>
+			<string>(G9[01] )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G92.1 commands</string>
+			<key>match</key>
+			<string>(G92\.1 )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>G93 - G94 commands</string>
+			<key>match</key>
+			<string>(G9[34] )</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>M3 - M9 commands</string>
+			<key>match</key>
+			<string>(M[34589][ ])</string>
+			<key>name</key>
+			<string>support.constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>M30 commands</string>
+			<key>match</key>
+			<string>(M30[ ])</string>
+			<key>name</key>
+			<string>support.constant</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>M100 - M101 commands</string>
+			<key>match</key>
+			<string>(M10[01][ ])</string>
 			<key>name</key>
 			<string>support.constant</string>
 		</dict>
@@ -104,7 +192,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>O &amp; N numberes</string>
+			<string>O &amp; N numbers</string>
 			<key>match</key>
 			<string>([ON]([\d\.-])+)</string>
 			<key>name</key>

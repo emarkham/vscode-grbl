@@ -1,7 +1,11 @@
 graph_data
-graph { 
-  a -- b
-  a -- b
-  b -- a [color=blue]
-}
+@startuml
+object A
+object B
+object C
+
+A --|> B
+B .. C
+C --|> A "return"
+@enduml
 graph_data

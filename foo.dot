@@ -1,5 +1,7 @@
+graph_data
 graph { 
   a -- b
   a -- b
   b -- a [color=blue]
 }
+graph_data
